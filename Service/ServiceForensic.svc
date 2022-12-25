@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="CloudForensicServicce.Service1" CodeBehind="ServiceForensic.svc.cs" %>

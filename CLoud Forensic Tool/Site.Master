@@ -1,0 +1,317 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CloudForensics.Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>CF </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- ================== BEGIN core-css ================== -->
+    <link href="assets/css/vendor.min.css" rel="stylesheet" />
+    <link href="assets/css/app.min.css" rel="stylesheet" />
+    <!-- ================== END core-css ================== -->
+      <link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+
+
+    <!-- ================== BEGIN page-css ================== -->
+    <link href="assets/plugins/jvectormap-next/jquery-jvectormap.css" rel="stylesheet" />
+    <!-- ================== END page-css ================== -->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <!-- BEGIN #app -->
+   <div id="app" class="app app-content-full-height">
+       
+            <!-- BEGIN #header -->
+            <div id="header" class="app-header">
+                <!-- BEGIN desktop-toggler -->
+                <div class="desktop-toggler">
+                    <button type="button" class="menu-toggler" data-toggle-class="app-sidebar-collapsed" data-dismiss-class="app-sidebar-toggled" data-toggle-target=".app">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+                <!-- BEGIN desktop-toggler -->
+
+                <!-- BEGIN mobile-toggler -->
+                <div class="mobile-toggler">
+                    <button type="button" class="menu-toggler" data-toggle-class="app-sidebar-mobile-toggled" data-toggle-target=".app">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+                <!-- END mobile-toggler -->
+
+                <!-- BEGIN brand -->
+                <div class="brand">
+                    <a href="#" class="brand-logo">
+                        <span class="brand-img">
+                            <span class="brand-img-text text-theme">C</span>
+                        </span>
+                        <span class="brand-text">CFT Portal</span>
+                    </a>
+                </div>
+                <!-- END brand -->
+
+                <!-- BEGIN menu -->
+                <div class="menu">
+                    <div class="menu-item dropdown">
+                        <a href="#" data-toggle-class="app-header-menu-search-toggled" data-toggle-target=".app" class="menu-link">
+                            <div class="menu-icon"><i class="bi bi-search nav-icon"></i></div>
+                        </a>
+                    </div>
+                    
+                    
+                    <div class="menu-item dropdown dropdown-mobile-full">
+                        <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+                            <div class="menu-img online">
+                                <img src="assets/img/user/profile.jpg" alt="Profile" height="60" />
+                            </div>
+                            <div class="menu-text d-sm-block d-none"><asp:Label runat="server" ID="lblUserEmail" Text="username@account.com" /></div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px mt-1">
+                            <a class="dropdown-item d-flex align-items-center" href="Inbox">INBOX <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item d-flex align-items-center" href="Logout">LOGOUT <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END menu -->
+
+                <!-- BEGIN menu-search -->
+                <div class="menu-search" method="POST" name="header_search_form">
+                    <div class="menu-search-container">
+                        <div class="menu-search-icon"><i class="bi bi-search"></i></div>
+                        <div class="menu-search-input">
+                            <input type="text" class="form-control form-control-lg" placeholder="Search menu..." />
+                        </div>
+                        <div class="menu-search-icon">
+                            <a href="#" data-toggle-class="app-header-menu-search-toggled" data-toggle-target=".app"><i class="bi bi-x-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END menu-search -->
+            </div>
+            <!-- END #header -->
+
+            <!-- BEGIN #sidebar -->
+            <div id="sidebar" class="app-sidebar">
+                <!-- BEGIN scrollbar -->
+                <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+                    <!-- BEGIN menu -->
+                    <div class="menu">
+                        <div class="menu-header">Navigation</div>
+                        <div class="menu-item">
+                            <a href="Dashboard" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-cpu"></i></span>
+                                <span class="menu-text">Dashboard</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="Analytics" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-bar-chart"></i></span>
+                                <span class="menu-text">Analytics</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="Cyber-Incidents" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-collection"></i></span>
+                                <span class="menu-text">Cyber-Incidents</span>
+                            </a>
+                        </div>
+                        
+                         <div class="menu-item has-sub">
+                            <a href="#" class="menu-link">
+                                <span class="menu-icon">
+                                    <i class="bi bi-laptop"></i>
+                                </span>
+                                <span class="menu-text">Machines</span>
+                                <span class="menu-caret"><b class="caret"></b></span>
+                            </a>
+                            <div class="menu-submenu">
+                                <div class="menu-item">
+                                    <a href="Host" class="menu-link">
+                                        <span class="menu-text">Host</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="VMs" class="menu-link">
+                                        <span class="menu-text">VM</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="menu-item has-sub">
+                            <a href="#" class="menu-link">
+                                <span class="menu-icon">
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+                                <span class="menu-text">Email</span>
+                                <span class="menu-caret"><b class="caret"></b></span>
+                            </a>
+                            <div class="menu-submenu">
+                                <div class="menu-item">
+                                    <a href="Inbox" class="menu-link">
+                                        <span class="menu-text">Inbox</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="Compose" class="menu-link">
+                                        <span class="menu-text">Compose</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="email_detail.html" class="menu-link">
+                                        <span class="menu-text">Detail</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                        <div class="menu-divider"></div>
+                        <div class="menu-header">Users</div>
+                        <div class="menu-item">
+                            <a href="Users" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-people"></i></span>
+                                <span class="menu-text">Profile</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <!-- END menu -->
+                    <div class="p-3 px-4 mt-auto">
+                        <a href="#" class="btn d-block btn-outline-theme">
+                            <i class="fa fa-code-branch me-2 ms-n2 opacity-5"></i>Documentation
+					</a>
+                    </div>
+                </div>
+                <!-- END scrollbar -->
+            </div>
+            <!-- END #sidebar -->
+
+            <!-- BEGIN mobile-sidebar-backdrop -->
+            <button class="app-sidebar-mobile-backdrop" data-toggle-target=".app" data-toggle-class="app-sidebar-mobile-toggled"></button>
+            <!-- END mobile-sidebar-backdrop -->
+
+            <!-- BEGIN #content -->
+         
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+       
+
+
+        <!-- END #content -->
+        <!-- BEGIN theme-panel -->
+		<div class="app-theme-panel">
+			<div class="app-theme-panel-container">
+				<a href="javascript:;" data-toggle="theme-panel-expand" class="app-theme-toggle-btn"><i class="bi bi-sliders"></i></a>
+				<div class="app-theme-panel-content">
+					<div class="small fw-bold text-white mb-1">Theme Color</div>
+					<div class="card mb-3">
+						<!-- BEGIN card-body -->
+						<div class="card-body p-2">
+							<!-- BEGIN theme-list -->
+							<div class="app-theme-list">
+								<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-pink" data-theme-class="theme-pink" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Pink">&nbsp;</a></div>
+								<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-red" data-theme-class="theme-red" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Red">&nbsp;</a></div>
+								<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-warning" data-theme-class="theme-warning" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Orange">&nbsp;</a></div>
+								<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-yellow" data-theme-class="theme-yellow" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Yellow">&nbsp;</a></div>
+								<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-lime" data-theme-class="theme-lime" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Lime">&nbsp;</a></div>
+								<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-green" data-theme-class="theme-green" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Green">&nbsp;</a></div>
+								<div class="app-theme-list-item active"><a href="javascript:;" class="app-theme-list-link bg-teal" data-theme-class="" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Default">&nbsp;</a></div>
+								<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-info" data-theme-class="theme-info"  data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cyan">&nbsp;</a></div>
+								<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-primary" data-theme-class="theme-primary"  data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Blue">&nbsp;</a></div>
+								<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-purple" data-theme-class="theme-purple" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Purple">&nbsp;</a></div>
+								<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-indigo" data-theme-class="theme-indigo" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Indigo">&nbsp;</a></div>
+								<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-gray-100" data-theme-class="theme-gray-200" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Gray">&nbsp;</a></div>
+							</div>
+							<!-- END theme-list -->
+						</div>
+						<!-- END card-body -->
+						
+						<!-- BEGIN card-arrow -->
+						<div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						</div>
+						<!-- END card-arrow -->
+					</div>
+					
+					<div class="small fw-bold text-white mb-1">Theme Cover</div>
+					<div class="card">
+						<!-- BEGIN card-body -->
+						<div class="card-body p-2">
+							<!-- BEGIN theme-cover -->
+							<div class="app-theme-cover">
+								<div class="app-theme-cover-item active">
+									<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-1.jpg);" data-theme-cover-class="" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Default">&nbsp;</a>
+								</div>
+								<div class="app-theme-cover-item">
+									<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-2.jpg);" data-theme-cover-class="bg-cover-2" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 2">&nbsp;</a>
+								</div>
+								<div class="app-theme-cover-item">
+									<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-3.jpg);" data-theme-cover-class="bg-cover-3" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 3">&nbsp;</a>
+								</div>
+								<div class="app-theme-cover-item">
+									<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-4.jpg);" data-theme-cover-class="bg-cover-4" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 4">&nbsp;</a>
+								</div>
+								<div class="app-theme-cover-item">
+									<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-5.jpg);" data-theme-cover-class="bg-cover-5" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 5">&nbsp;</a>
+								</div>
+							</div>
+							<!-- END theme-cover -->
+						</div>
+						<!-- END card-body -->
+						
+						<!-- BEGIN card-arrow -->
+						<div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						</div>
+						<!-- END card-arrow -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END theme-panel -->
+       <!-- BEGIN btn-scroll-top -->
+		<a href="#" data-toggle="scroll-to-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+		<!-- END btn-scroll-top -->
+
+    </div>
+    <!-- END #app -->
+
+    <!-- ================== BEGIN core-js ================== -->
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <!-- ================== END core-js ================== -->
+     <script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <!-- script -->
+   
+
+    <!-- ================== BEGIN page-js ================== -->
+    <script src="assets/plugins/jvectormap-next/jquery-jvectormap.min.js"></script>
+    <script src="assets/plugins/jvectormap-content/world-mill.js"></script>
+    <script src="assets/plugins/apexcharts/dist/apexcharts.min.js"></script>
+   
+    <!-- ================== END page-js ================== -->
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+     </form>
+</body>
+</html>

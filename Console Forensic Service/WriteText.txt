@@ -1,0 +1,369 @@
+HandleCount  Name                                               Priority  ProcessId  ThreadCount  WorkingSetSize  
+
+0            System Idle Process                                0         0          8            8192            
+
+4149         System                                             8         4          141          57344           
+
+0            Registry                                           8         124        4            78295040        
+
+60           smss.exe                                           11        352        2            573440          
+
+636          csrss.exe                                          13        452        11           2658304         
+
+161          wininit.exe                                        13        540        3            1728512         
+
+169          csrss.exe                                          13        548        10           2392064         
+
+214          winlogon.exe                                       13        640        3            4018176         
+
+643          services.exe                                       9         684        7            8237056         
+
+4066         lsass.exe                                          9         704        7            19144704        
+
+1038         svchost.exe                                        8         824        12           15028224        
+
+33           fontdrvhost.exe                                    8         852        5            1568768         
+
+33           fontdrvhost.exe                                    8         860        5            1523712         
+
+1220         svchost.exe                                        8         936        12           19619840        
+
+1704         svchost.exe                                        8         988        7            8769536         
+
+1106         svchost.exe                                        8         500        49           96481280        
+
+503          LogonUI.exe                                        13        440        9            45416448        
+
+733          dwm.exe                                            13        552        14           21630976        
+
+211          svchost.exe                                        8         984        1            2285568         
+
+308          svchost.exe                                        8         1080       1            4370432         
+
+404          svchost.exe                                        8         1152       8            14200832        
+
+163          svchost.exe                                        8         1272       2            3588096         
+
+141          svchost.exe                                        8         1300       5            3911680         
+
+213          svchost.exe                                        8         1364       2            7499776         
+
+184          svchost.exe                                        8         1372       5            2674688         
+
+218          svchost.exe                                        8         1380       4            1933312         
+
+187          svchost.exe                                        8         1388       4            4816896         
+
+199          svchost.exe                                        8         1428       2            5529600         
+
+249          svchost.exe                                        8         1492       8            2588672         
+
+176          svchost.exe                                        8         1580       2            5365760         
+
+306          svchost.exe                                        8         1688       5            4218880         
+
+382          svchost.exe                                        8         1696       7            8597504         
+
+298          svchost.exe                                        8         1708       12           5509120         
+
+272          svchost.exe                                        8         1740       3            3272704         
+
+360          svchost.exe                                        8         1808       4            5435392         
+
+178          svchost.exe                                        8         1820       5            2768896         
+
+183          svchost.exe                                        8         1872       2            3448832         
+
+120          svchost.exe                                        8         1964       1            3715072         
+
+161          svchost.exe                                        8         1976       5            3375104         
+
+416          svchost.exe                                        8         1984       14           8806400         
+
+182          svchost.exe                                        8         1120       4            3854336         
+
+207          svchost.exe                                        8         1456       5            3555328         
+
+437          svchost.exe                                        8         2128       10           6279168         
+
+211          svchost.exe                                        8         2376       6            5009408         
+
+555          spoolsv.exe                                        8         2528       7            15515648        
+
+379          svchost.exe                                        8         2564       8            11251712        
+
+165          svchost.exe                                        8         2572       6            2248704         
+
+572          svchost.exe                                        8         2580       10           38391808        
+
+108          svchost.exe                                        8         2592       1            1802240         
+
+366          svchost.exe                                        8         2616       5            3108864         
+
+206          inetinfo.exe                                       8         2636       3            2371584         
+
+252          svchost.exe                                        8         2700       15           5275648         
+
+108          TCPSVCS.EXE                                        8         2740       2            1568768         
+
+377          mqsvc.exe                                          8         2748       31           4366336         
+
+270          SMSvcHost.exe                                      8         2756       7            3903488         
+
+200          svchost.exe                                        8         2764       6            3796992         
+
+161          svchost.exe                                        8         2800       4            10940416        
+
+133          svchost.exe                                        8         2820       2            2281472         
+
+139          sqlwriter.exe                                      8         2828       2            1789952         
+
+124          svchost.exe                                        8         2868       3            1572864         
+
+207          svchost.exe                                        8         2884       3            2732032         
+
+421          svchost.exe                                        8         2956       19           20652032        
+
+231          svchost.exe                                        8         2996       5            5894144         
+
+132          svchost.exe                                        8         3008       1            4141056         
+
+922          MsMpEng.exe                                        8         3032       31           231878656       
+
+108          svchost.exe                                        8         3376       3            1605632         
+
+550          sqlceip.exe                                        6         3508       14           30318592        
+
+754          sqlservr.exe                                       8         3528       70           327688192       
+
+88           AggregatorHost.exe                                 8         3760       2            1814528         
+
+160          svchost.exe                                        8         3860       3            3928064         
+
+249          SMSvcHost.exe                                      8         3948       6            2945024         
+
+207          NisSrv.exe                                         8         5060       4            5697536         
+
+898          csrss.exe                                          13        4124       19           4009984         
+
+258          winlogon.exe                                       13        4172       3            6217728         
+
+33           fontdrvhost.exe                                    8         4196       5            4567040         
+
+1140         dwm.exe                                            13        972        21           72306688        
+
+452          rdpclip.exe                                        8         560        12           16113664        
+
+573          sihost.exe                                         8         2504       11           19107840        
+
+285          svchost.exe                                        8         1556       3            6205440         
+
+433          svchost.exe                                        8         2016       3            20475904        
+
+236          taskhostw.exe                                      8         3804       6            9973760         
+
+457          svchost.exe                                        8         732        9            13524992        
+
+180          svchost.exe                                        8         2208       3            3465216         
+
+427          ctfmon.exe                                         13        4460       10           12185600        
+
+232          svchost.exe                                        8         5124       3            3076096         
+
+157          svchost.exe                                        8         5152       1            4788224         
+
+2625         explorer.exe                                       8         5256       109          137719808       
+
+536          TextInputHost.exe                                  8         5604       11           17006592        
+
+571          StartMenuExperienceHost.exe                        8         5636       6            36982784        
+
+358          RuntimeBroker.exe                                  8         5756       4            16080896        
+
+1284         SearchApp.exe                                      8         5924       41           68595712        
+
+457          RuntimeBroker.exe                                  8         6104       7            38817792        
+
+182          GoogleCrashHandler.exe                             4         2664       3            1794048         
+
+163          GoogleCrashHandler64.exe                           4         4316       3            376832          
+
+297          RuntimeBroker.exe                                  8         6476       1            11280384        
+
+314          svchost.exe                                        8         6852       24           22597632        
+
+231          msdtc.exe                                          8         7108       9            2367488         
+
+767          svchost.exe                                        8         6540       7            7892992         
+
+268          svchost.exe                                        8         6692       1            11640832        
+
+283          svchost.exe                                        8         6816       8            9457664         
+
+226          svchost.exe                                        8         6928       7            6959104         
+
+210          svchost.exe                                        8         1736       4            9265152         
+
+760          ShellExperienceHost.exe                            8         2416       21           34332672        
+
+329          RuntimeBroker.exe                                  8         3716       3            18358272        
+
+117          svchost.exe                                        8         12148      1            2940928         
+
+167          svchost.exe                                        8         12732      2            4464640         
+
+272          svchost.exe                                        8         11784      9            8204288         
+
+397          taskhostw.exe                                      8         12500      4            19087360        
+
+304          dllhost.exe                                        8         11144      5            9375744         
+
+106          svchost.exe                                        8         11180      2            2482176         
+
+285          svchost.exe                                        8         8620       3            11485184        
+
+191          svchost.exe                                        8         14232      4            3616768         
+
+108          sethc.exe                                          8         12800      1            737280          
+
+382          TabTip.exe                                         13        13360      13           9797632         
+
+97           TabTip32.exe                                       8         14272      1            1409024         
+
+107          svchost.exe                                        8         12740      2            6111232         
+
+195          SecurityHealthService.exe                          8         12572      3            10170368        
+
+1377         msedge.exe                                         8         2816       30           87650304        
+
+156          msedge.exe                                         8         6444       7            9269248         
+
+334          msedge.exe                                         10        8892       14           32051200        
+
+296          msedge.exe                                         8         5396       12           36610048        
+
+213          msedge.exe                                         8         6552       8            20201472        
+
+310          msedge.exe                                         4         12692      16           74620928        
+
+223          TabTip.exe                                         13        11060      5            13824000        
+
+1331         chrome.exe                                         8         15264      30           196628480       
+
+170          chrome.exe                                         8         13044      7            9093120         
+
+335          chrome.exe                                         10        11564      14           55713792        
+
+338          chrome.exe                                         8         4344       14           37941248        
+
+212          chrome.exe                                         8         14528      8            18456576        
+
+724          Taskmgr.exe                                        8         136        16           65388544        
+
+542          InetMgr.exe                                        8         8764       11           64745472        
+
+254          chrome.exe                                         8         5744       10           19779584        
+
+2531         Ssms.exe                                           8         10180      37           260927488       
+
+398          WmiPrvSE.exe                                       8         5384       11           22384640        
+
+3764         devenv.exe                                         8         2040       67           1324306432      
+
+794          PerfWatson2.exe                                    8         6768       26           86786048        
+
+1149         Microsoft.ServiceHub.Controller.exe                8         15068      23           66519040        
+
+1107         ServiceHub.VSDetouredHost.exe                      8         10304      14           52359168        
+
+1681         ServiceHub.IdentityHost.exe                        8         8016       21           74555392        
+
+992          ServiceHub.SettingsHost.exe                        8         9864       17           78143488        
+
+845          ServiceHub.Host.CLR.x86.exe                        8         13524      22           75698176        
+
+225          sppsvc.exe                                         8         10804      4            13250560        
+
+780          ServiceHub.ThreadedWaitDialog.exe                  8         4060       15           82944000        
+
+618          Microsoft.VisualStudio.Web.Host.exe                8         2296       10           83292160        
+
+1600         ServiceHub.RoslynCodeAnalysisService.exe           8         7956       46           467939328       
+
+749          ServiceHub.Host.CLR.x64.exe                        8         9684       25           874692608       
+
+452          Microsoft.Alm.Shared.Remoting.RemoteContainer.dll  6         6148       12           70578176        
+
+750          ServiceHub.Host.CLR.x86.exe                        8         14440      24           106717184       
+
+3141         ServiceHub.DataWarehouseHost.exe                   8         4928       49           142962688       
+
+1423         WebViewHost.exe                                    8         5492       21           65900544        
+
+105          conhost.exe                                        8         14644      2            11853824        
+
+108          VsDebugConsole.exe                                 8         8500       2            6422528         
+
+258          conhost.exe                                        8         4248       8            22777856        
+
+563          chrome.exe                                         4         9856       20           237514752       
+
+337          chrome.exe                                         4         9876       15           135725056       
+
+378          chrome.exe                                         4         8784       15           103145472       
+
+337          msedge.exe                                         4         9140       16           137297920       
+
+228          MusNotifyIcon.exe                                  6         11844      3            3284992         
+
+1715         ServiceHub.Host.CLR.exe                            8         11576      43           121200640       
+
+782          ServiceHub.TestWindowStoreHost.exe                 8         9520       13           84238336        
+
+953          w3wp.exe                                           8         8252       39           235311104       
+
+469          MSBuild.exe                                        8         9932       22           70426624        
+
+102          conhost.exe                                        8         11588      2            11997184        
+
+409          VBCSCompiler.exe                                   8         9576       20           117342208       
+
+105          conhost.exe                                        8         10976      2            11853824        
+
+172          WmiPrvSE.exe                                       8         12592      4            10022912        
+
+327          WUDFHost.exe                                       8         13544      8            33456128        
+
+537          StandardCollector.Service.exe                      8         9948       23           44093440        
+
+438          CloudForensicConsole.exe                           8         6456       29           64471040        
+
+500          IntelliTrace.exe                                   8         3844       20           50475008        
+
+105          conhost.exe                                        8         11880      4            11902976        
+
+1255         msedgewebview2.exe                                 8         16208      48           100040704       
+
+169          msedgewebview2.exe                                 8         8544       9            8441856         
+
+425          msedgewebview2.exe                                 10        15928      22           54026240        
+
+260          msedgewebview2.exe                                 8         14544      14           26128384        
+
+206          msedgewebview2.exe                                 8         1316       8            18939904        
+
+326          msedgewebview2.exe                                 8         14960      17           86523904        
+
+246          msedgewebview2.exe                                 4         5856       16           53858304        
+
+287          msedgewebview2.exe                                 8         1440       17           68280320        
+
+328          msedgewebview2.exe                                 4         14720      17           71536640        
+
+186          WMIC.exe                                           8         7340       7            12271616        
+
+102          conhost.exe                                        8         12292      4            12025856        
+
+
+
+
